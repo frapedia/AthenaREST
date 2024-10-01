@@ -10,7 +10,7 @@ Write-Host "RecPassword:"
 $RecPassword = [Console]::ReadLine()
 
 
-# Convert the reconcilie username and password to Base64 for Basic Authentication
+# Convert the reconcile username and password to Base64 for Basic Authentication
 $credentials = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("${RecUser}:${RecPassword}"))
 
 
